@@ -1,14 +1,14 @@
 {
-  "name": "one-dark-syntax",
+  "name": "atom-wine-syntax",
   "theme": "syntax",
   "version": "1.1.1",
-  "description": "A dark syntax theme",
+  "description": "Purple based syntax to those who wants to use the color of creativity! while programming.",
   "keywords": [
     "dark",
-    "blue",
+    "purple",
     "syntax"
   ],
-  "repository": "https://github.com/atom/one-dark-syntax",
+  "repository": "https://github.com/willyelm/atom-wine-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
