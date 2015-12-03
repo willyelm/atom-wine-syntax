@@ -80,3 +80,42 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
     color: @syntax-gutter-text-color-selected;
   }
 }
+
+atom-panel-container .cli-status{
+  margin-right: 6px;
+  margin-top: -1px;
+  .terminal{
+    font-size: 13px!important;
+    padding: 0px 15px;
+    background-color: rgba(0,0,0, .2);
+    border-color: rgba(0,0,0, .4);
+  }
+}
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor {
+
+  -webkit-font-smoothing: antialiased;
+
+  &::shadow{
+
+    .indent-guide {
+      box-shadow: none!important;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top:0px;
+        left:3px;
+        width: 0px;
+        height: 100%;
+        border-left: 1px dashed rgba(255,255,255,.1);
+      }
+    }
+    .scroll-view, .gutter-container{
+      padding: 10px 5px;
+    }
+  }
+  &.mini::shadow .scroll-view{
+    padding: 0px;
+  }
+}
