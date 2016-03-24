@@ -96,7 +96,8 @@ atom-panel-container .cli-status{
 atom-text-editor {
 
   -webkit-font-smoothing: antialiased;
-
+  padding: .5rem;
+  
   &::shadow{
 
     .indent-guide {
@@ -112,11 +113,11 @@ atom-text-editor {
         border-left: 1px dashed rgba(255,255,255,.1);
       }
     }
-    .scroll-view, .gutter-container{
-      padding: 10px 5px;
-    }
+    // .scroll-view, .gutter-container{
+    //   padding: 10px 5px;
+    // }
   }
-  &.mini::shadow .scroll-view{
-    padding: 0px;
-  }
+  // &.mini::shadow .scroll-view{
+  //   padding: 0px;
+  // }
 }
